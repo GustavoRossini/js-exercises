@@ -12,6 +12,10 @@
 
 var startingValue = 5;
 
+var multiplyStartingValuePerTwo = multiply(startingValue, 2);
+var result = add (multiplyStartingValuePerTwo, 10);
+ 
+
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
 
