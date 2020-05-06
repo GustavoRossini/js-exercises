@@ -3,9 +3,20 @@
 // - NOT change the original array
 // - return a new array with the first item matching `valueToRemove` removed
 // TIP: Use the .indexOf() method
+function cloneArray(arr) {
+  return arr.slice();
+}
 
 function remove(arr, valueToRemove) {
-  return; // complete this statement
+
+var indexToRemove = arr.indexOf(valueToRemove);
+
+var newArr = cloneArray(arr);
+
+newArr.splice(indexToRemove, 1);
+
+return newArr;
+// complete this statement
 }
 
 /* 
@@ -20,6 +31,7 @@ var newNames = remove(names, "Ashleigh");
 console.log(newNumbers);
 console.log(newNames);
 
+console.log(names);
 /* 
   EXPECTED RESULT
   ---------------

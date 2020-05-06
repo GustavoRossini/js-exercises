@@ -5,11 +5,19 @@
 
 // write your code here
 
+function checkNameLonger7LettersStartingWithA (array) {
+  for (var i = 0; i <= array.length; i++) {
+    
+    if (array[i].charAt(0) === "A" && array[i].length > 7) 
+    
+    {return array[i]}
+ }
+}
+
+
 var names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
 
-var longNameThatStartsWithA = findLongNameThatStartsWithA(names);
 
-console.log(longNameThatStartsWithA);
-
+console.log (checkNameLonger7LettersStartingWithA(names));
 /* EXPECTED OUTPUT */
 // "Alexandra"

@@ -3,9 +3,14 @@
 // - NOT change the original array
 // - return a new array with the item removed
 // - remove the item at the specified index
+function cloneArray(arr) {
+  return arr.slice();}
 
 function remove(arr, index) {
-  return; // complete this statement
+
+  var newArr = cloneArray(arr);  
+  newArr.splice(index, 1);
+  return newArr; // complete this statement
 }
 
 /* 
@@ -19,6 +24,8 @@ var newNames = remove(names, 1);
 
 console.log(newNumbers);
 console.log(newNames);
+
+console.log(names);
 
 /* 
   EXPECTED RESULT

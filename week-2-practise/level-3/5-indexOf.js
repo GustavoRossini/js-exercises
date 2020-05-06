@@ -6,7 +6,12 @@
 // - return a new array with the replacement value inserted
 
 function replace(arr, valueToReplace, newValue) {
-  return; // complete this statement
+ 
+var replaceItemIndex = arr.indexOf(valueToReplace);
+ 
+newArrValue = [newValue];
+
+return arr.slice(0, replaceItemIndex).concat(newArrValue).concat(arr.slice(replaceItemIndex + 1))// complete this statement
 }
 
 /* 

@@ -1,13 +1,13 @@
 // The code is valid but the program does not produce the expected result
-// Why doesn't it work?
+// Why doesn't it work? Because the if statement had not a conditional definied.
 // Fix it.
 
 var isHappy = "false";
 
-if (isHappy) {
+if (isHappy === true) {
   console.log("I am happy");
 } else {
-  console.log("I am not happy");
+  console.log("I am not happy");}
 }
 
 /* 
